@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Click the Button!</title>
+    <title>System Check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Try clicking the button 😈</h1>
+<div id="startScreen">
+    <h2>Press to continue</h2>
+    <button id="startBtn">pezz ladn pln</button>
+</div>
 
-    <button id="prankBtn">Click me!</button>
+<div id="mainVirus" style="display:none;">
+    <div id="alertBox">⚠️ SYSTEM FAILURE<br>SECURITY BREACH DETECTED</div>
+    <div id="recordDot"></div>
+    <div id="notifContainer"></div>
+</div>
 
-    <!-- The picture pops up later -->
-    <img src="funny.jpg" id="funnyPic" style="display:none;">
+<audio id="glitchSound" src="glitch.mp3"></audio>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
